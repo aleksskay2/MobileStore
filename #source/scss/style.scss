@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, * after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  color: black;
+  font-size: 16px;
+  background-color: #ecf7fd;
+}
+
+header {
+  text-align: center;
+  font-size: 42px;
+  color: #191d1b;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 50px;
+  background: url("../img/phone.png") 80% 0 no-repeat, url("../img/phone2.png") 20% bottom no-repeat #ac9afc;
+  font-style: italic;
+  border-radius: 15px;
+  
+  width: 100%;
+  
+}
+
+.content-menu{
+    background-color: rgb(251, 251, 255);
+    display: flex;
+    justify-content: center;
+}
+.content-menu input {
+    font-size: 32px;
+    width: 10%;
+}
+.content {
+  display: flex;
+  width:100%;
+  justify-content:flex-start;
+  background-color: #fff;
+  padding: 30px;
+  
+}
+
+.menulist {
+  line-height: 36px;
+  font-size: 32px;
+  display: flex;
+  max-width: 1000px;
+  justify-content: space-around;
+  width: 700px;
+  background-color: #6f7e9e;
+}
+
+.menulist li a {
+  color:white;
+  line-height: 58px;
+}
+
+.menulist li a:hover {
+  background-color: #6e727c;
+}
+
+.content-body{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1000px; 
+  padding: 20px;
+  background-color:rgb(231, 215, 215);
+  margin: 0px 0px  0px 220px;
+}
+
+
+.phone-item img {
+  width: 200px;
+  height: 200px;
+  
+}
+
+.phone-item a {
+  display: block;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+ 
+  margin: 10px 0px 0px 0px;
+}
+
+.phone-item {
+  margin: 0px 0px 40px 0px;
+  padding: 3px;
+  background-color: rgb(186, 195, 240);
+  border-radius: 5px;
+}
+
+.button {
+  background-color: rgb(54, 124, 255);
+  padding: 5px;
+  border-radius: 10px;
+  border:none;
+  text-align: center;
+  width: 100%;
+  }
+.button:hover {
+ 
+  background: #28597a;
+  color: #ccc;
+  }
+.button:active {
+  
+  background: #1b435e;
+}
+
+.wrapper{
+  display: none;
+}
+
+
+
+
+.sub-menu {
+  background-color: green;
+  position: absolute;
+  width: 207px;
+  display: none;
+  
+}
+.sub-menu li{
+ 
+}
+
+.sub-menu li a{
+  display: block;
+}
+
+.menulist > li:hover .sub-menu{
+  display: block;
+}
+
+.menulist > li:hover .sub-menu-prinad{
+  display: block;
+}
+
+.menulist > li:hover .sub-menu-contacts{
+  display: block;
+}
+
+.sub-menu li a:hover{
+  background-color: rgb(161, 161, 228);
+}
+
+aside{
+    width: 200px;
+    background-color: #6f7e9e;
+    border-radius: 5px;
+    height: 100vh;
+   
+}
+
+aside .sidebar li{
+    list-style-type:none;
+    border-bottom:2px solid gray;
+}
+aside .sidebar li a{
+    line-height: 50px;
+    color:#fff;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+aside .sidebar li a:hover{
+    background-color: gray;
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: #6f7e9e;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+  color:white;
+}

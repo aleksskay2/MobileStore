@@ -1,0 +1,168 @@
+@media (max-width: 768px) {
+    header{
+      font-size: 16px;
+      background: url("../img/phone.png") 5% center no-repeat #ac9afc;
+      text-align: center;
+      background-size: 20%;
+      background-color: #ac9afc;
+      width: 100%;
+    }
+    .content-menu{
+      margin: 0px 0px 50px 0px;
+    }
+    .menulist {
+      display: none;
+    }
+  
+    .wrapper {
+      display: block;
+     
+      width: 100%;
+      background-color: #536282;
+      position: relative;
+      color:white;
+      text-align: center;
+      height: 40px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+  
+    #check-menu{
+      display: none;
+    }
+    
+    label{
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 2;
+      line-height: 40px;
+    }
+    
+    .burger-line{
+      position: absolute;
+      top:8px;
+      right: 10px;
+      width: 35px;
+      height: 2px;
+      background-color: red;
+      transition: .3s all ;
+    }
+    
+    .second, .third{
+      top:18px;
+    }
+    
+    .forth{
+      top:28px;
+    }
+    
+    .main-menu{
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom:0;
+      left: 0;
+      transform: translateY(100%);
+      max-height: 0;
+      font-size: 0;
+      overflow: hidden;
+      transition: .3s all ;
+    }
+    
+    .wrapper a{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      color:white;
+      text-decoration: none;
+      border-top:1px solid  rgb(255,255, 255,.3);
+      background-color: #536282;
+    }
+    
+    
+    
+    #check-menu:checked ~ .main-menu{
+      max-height:500px;
+      font-size: 16px;
+    }
+    
+    #check-menu:checked ~ .first{
+      display: none;
+    }
+    
+    #check-menu:checked ~ .second {
+      transform:rotate(-45deg);
+    }
+    
+    #check-menu:checked ~ .third{
+      transform:rotate(45deg);
+    }
+    #check-menu:checked ~ .forth{
+      display: none;
+    }
+    
+    
+    
+  
+    .content{
+      padding: 50px 0px 0px 0px ;
+    }
+    .content-body{
+      display: flex;  
+      flex-direction: column; 
+      width: 80%;
+      background-color: #eae4e4;
+      margin: auto;
+      
+    }
+  
+    
+    
+   
+    .phone-row {
+      display: flex;
+      flex-direction: column;
+  
+      align-content: space-between;
+    }
+    
+    .phone-item {
+      border: 1px solid white;
+      padding: 15px;
+      height: 28vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .phone-item img{
+      width: 170px;
+      height: 140px;
+    }
+  
+    .phone-item .button {
+     width: 70%;
+    }
+
+    
+    
+  
+    aside{
+     display: none;
+   
+    }  
+}
+  
+
+
+@media (max-width: 1128px)
+{
+   header{
+     min-width: 100%;
+     color: red;
+   }
+}
